@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <title>Restro</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #preloader{
+      background:whitesmoke url("C:\Users\Lucky Navya\Desktop\restaurent\restaurant-main\images\preloader.gif") no-repeat center center;
+      background-size:70%;
+      height:100vh;
+      width:100%;
+      position:fixed; 
+      z-index:100;
+    }
+    </style>
+</head>
+<body>
+    <div id="preloader">
+
+    </div>
+    <!-- header started -->
+    <div class="header">
+        <div class="header-section">
+            <div class="header-left">
+                <a href="#">home</a>
+                <a href="#">about us</a>
+                <a href="#">services</a>
+                <a href="offers.html">offers</a>
+            </div>
+        </div>
+        <div class="header-section">
+            <div class="header-center">
+                <a href="#">
+                    <img src="\images\logo1.jpg" alt="logo">
+                </a>
+            </div>
+        </div>
+        <div class="header-section">
+            <div class="header-right">
+                <a href="menu.html">menu</a>
+                <a href="reservation.html">reservation</a>
+                <a href="contact.html">contact</a>
+            </div>
+        </div>
+    </div>
+    <!-- header finished -->
+    <!-- introduction started -->
+    <div class="introduction">
+        <img src="data:image/jpeg;base64,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" alt="introduction">
+        <div class="introduction-content">
+            <div class="heading">
+                <span>Delicious</span>
+                <span>Food</span>
+            </div>
+            <div class="desc">This is the food Restaurent of Sneha Kukka</div>
+            <a href="#" class="btn">read more</a>
+        </div>
+    </div>
+    <!-- introduction finished -->
+    <!-- meal section started -->
+    <div class="meal-container">
+        <div class="meal">
+            <a href="#" class="meal-link">
+                <img src="images/meal-1.png" alt="meal-1">
+            </a>
+            <span class="meal-name">Breakfast</span>
+        </div>
+        <div class="meal">
+            <a href="#" class="meal-link">
+                <img src="images/meal-2.png" alt="meal-2">
+            </a>
+            <span class="meal-name">Lunch</span>
+        </div>
+        <div class="meal">
+            <a href="#" class="meal-link">
+                <img src="images/meal-3.png" alt="meal-3">
+            </a>
+            <span class="meal-name">Dinner</span>
+        </div>
+        <div class="meal">
+            <a href="#" class="meal-link">
+                <img src="images/meal-4.png" alt="meal-4">
+            </a>
+            <span class="meal-name">Custom</span>
+        </div>
+    </div>
+    <!-- meal section finished -->
+    <!-- offers section started  -->
+    <div class="offers">
+        <span class="offers-heading1">Delicious recipes</span>
+        <span class="offers-heading2">our daily offers</span>
+        <div class="discount-container">
+            <div class="discount-card">
+                <img src="images/offers-1.jpeg" alt="offer1">
+                <span class="offer-name">main dishes</span>
+                <span class="offer-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos eligendi dignissimos.
+                </span>
+                <div class="off">
+                    <span>30%</span>
+                    <span>OFF</span>
+                </div>
+            </div>
+            <div class="discount-card">
+                <img src="images/offers-2.jpeg" alt="offer2">
+                <span class="offer-name">beverages</span>
+                <span class="offer-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos eligendi dignissimos.
+                </span>
+                <div class="off">
+                    <span>30%</span>
+                    <span>OFF</span>
+                </div>
+            </div>
+            <div class="discount-card">
+                <img src="images/offers-3.jpeg" alt="offer3">
+                <span class="offer-name">desserts</span>
+                <span class="offer-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos eligendi dignissimos.
+                </span>
+                <div class="off">
+                    <span>30%</span>
+                    <span>OFF</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- offers section finished  -->
+    <!-- menu section started -->
+    <div class="menu-container">
+        <span class="menu-heading1">Delicious recipes</span>
+        <span class="menu-heading2">our menu</span>
+        <div class="menu">
+            <div class="menu-content">
+                <img src="images/menu-1.jpeg" alt="menu">
+                <div class="food-content">
+                    <span class="food-name">Thai Red Curry</span>
+                    <span class="food-description">
+                        Pellentesque fermentum eros varidolor mattise et posuere lectus dignissimings Integer porta nuncsit amet.
+                    </span>
+                    <span class="food-cost">$19.50</span>
+                </div>
+            </div>
+            <div class="menu-content">
+                <img src="images/menu-2.jpeg" alt="menu">
+                <div class="food-content">
+                    <span class="food-name">Mexican Pizza</span>
+                    <span class="food-description">
+                        Pellentesque fermentum eros varidolor mattise et posuere lectus dignissimings Integer porta nuncsit amet.
+                    </span>
+                    <span class="food-cost">$19.50</span>
+                </div>
+            </div>
+            <div class="menu-content">
+                <img src="images/menu-3.jpeg" alt="menu">
+                <div class="food-content">
+                    <span class="food-name">Italian Burger</span>
+                    <span class="food-description">
+                        Pellentesque fermentum eros varidolor mattise et posuere lectus dignissimings Integer porta nuncsit amet.
+                    </span>
+                    <span class="food-cost">$19.50</span>
+                </div>
+            </div>
+            <div class="menu-content">
+                <img src="images/menu-4.jpeg" alt="menu">
+                <div class="food-content">
+                    <span class="food-name">Cheese Sandwich</span>
+                    <span class="food-description">
+                        Pellentesque fermentum eros varidolor mattise et posuere lectus dignissimings Integer porta nuncsit amet.
+                    </span>
+                    <span class="food-cost">$19.50</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu section finished -->
+    <!-- reservation section started -->
+    <div class="reservation-container">
+        <div class="reservation-content">
+            <div class="time-container">
+                <div class="times">
+                    <div class="time-section">
+                        <span class="time">time</span>
+                        <span class="open">open</span>
+                    </div>
+                    <div class="time-section">
+                        <span class="day">monday - friday</span>
+                        <span class="hour">7AM - 1AM(Breakfast)</span>
+                        <span class="hour">11AM - 10PM(Lunch / Dinner)</span>
+                    </div>
+                    <div class="time-section">
+                        <span class="day">saturday - sunday</span>
+                        <span class="hour">8AM - 1PM(Breakfast)</span>
+                        <span class="hour">1PM - 9PM(Lunch / Dinner)</span>
+                    </div>
+                    <div class="time-section">
+                        <span class="phone">123 - 456 - 789</span>
+                    </div>
+                </div>
+            </div>
+            <div class="booking-container">
+                <span class="booking-heading1">reservation</span>
+                <span class="booking-heading2">online booking</span>
+                <div class="form-container">
+                    <input type="number" class="book-input" placeholder="Person">
+                    <input type="date" class="book-input">
+                    <input type="time" class="book-input" placeholder="Time">
+                    <input type="text" class="book-input" placeholder="Name">
+                    <input type="text" class="book-input" placeholder="Phone">
+                    <input type="email" class="book-input" placeholder="Email">
+                </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+    </div>
+    <!-- reservation section finished -->
+     <!-- contact section started -->
+     <body>
+        <div class="contact-container">
+            <div class="contact-content">
+                <div class="contact-heading">contact us</div>
+                <form action="#">
+                    <label for="name">your name <sup>*</sup> </label>
+                    <input class="contact-input" type="text" id="name">
+                    <label for="email">your email <sup>*</sup> </label>
+                    <input class="contact-input" type="text">
+                    <label for="subject">your subject</label>
+                    <input class="contact-input" type="text">
+                    <label for="message">your message</label>
+                    <textarea class="contact-input" name="message" id="message" cols="30" rows="10">
+    
+                    </textarea>    
+                    <button class="btn-send">send</a>            
+                </form>
+            </div>
+        </div>
+        <!-- contact section finished -->
+        <script>
+            var loader = document.getElementById("preloader");
+            window.addEventListener("load",function(){
+              loader.style.display = "none";
+            })
+            </script>
+        
+    
+</body>
+</html>
